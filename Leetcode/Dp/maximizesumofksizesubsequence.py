@@ -47,9 +47,7 @@ def DP(arr,k,m):
             if(i==j):
                 dp[i][j] = arr[j-1]*(i%m) + dp[i-1][j-1]
             else:
-                temp = arr[j-1]*(i%m)
-                mx = dp[i-1][j-1]
-                dp[i][j] = max(dp[i][j-1] , mx+temp)
+                dp[i][j] = max(dp[i][j-1] , dp[i-1][j-1]+arr[j-1]*(i%m))
     # print(dp)
     return dp[-1][-1]
 if(n!=0):
