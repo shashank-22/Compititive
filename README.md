@@ -1,6 +1,6 @@
 # Competitive Programming
 
-Here I add my daily practice data structures and algorithms solutions from different programming platforms.
+Here I add my daily practice of data structures and algorithm's problems from different programming platforms.
 
 ## Competitive Profiles
 
